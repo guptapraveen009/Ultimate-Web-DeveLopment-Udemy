@@ -49,22 +49,22 @@
 // }
 
 //Question -> Select all paragraphs and loop through each elements and give the first and third paragraph a color of green, and the second and the fourth paragraph a red color
-let para = document.getElementsByTagName("p");
-for(let i = 0; i < para.length; i++){
-   if(i === 0 || i === 2){
-      para[i].style.backgroundColor = "red"
-   }
-   else if(i === 1 || i === 3){
-      para[i].style.backgroundColor = "green";
-   }
-  }
+// let para = document.getElementsByTagName("p");
+// for(let i = 0; i < para.length; i++){
+//    if(i === 0 || i === 2){
+//       para[i].style.backgroundColor = "red"
+//    }
+//    else if(i === 1 || i === 3){
+//       para[i].style.backgroundColor = "green";
+//    }
+//   }
   //Question -> Set textcontent , id , class for each paragraph
-  let paragrapgh = document.getElementsByTagName("p");
-  for(let j = 0 ; j < paragrapgh.length; j++){
-   paragrapgh[j].textContent = `this is new paragraph -> ${j + 1}`;
-   paragrapgh[j].id = `paraji${j + 1}`;
-   paragrapgh[j].className = "Paragraph";
-   console.log(paragrapgh[j]);
-  }
+//   let paragrapgh = document.getElementsByTagName("p");
+//   for(let j = 0 ; j < paragrapgh.length; j++){
+//    paragrapgh[j].textContent = `this is new paragraph -> ${j + 1}`;
+//    paragrapgh[j].id = `paraji${j + 1}`;
+//    paragrapgh[j].className = "Paragraph";
+//    console.log(paragrapgh[j]);
+//   }
 
-//Level - 3
+
