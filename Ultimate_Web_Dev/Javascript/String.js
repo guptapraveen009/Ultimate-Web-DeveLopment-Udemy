@@ -54,62 +54,161 @@
 
 //Answers
 //1
-let word = '30 Days Of JavaScript';
+// let word = '30 Days Of JavaScript';
+// //2
+// console.log(word);
+// //3
+// console.log(word.length);
+// //4
+// console.log(word.toUpperCase());
+// //5
+// console.log(word.toLowerCase());
+// //6
+// console.log(word.slice(0 , 1));
+// //7
+// console.log(word.slice(3));
+// //8
+// console.log(word.includes("Script"));
+// //9
+// console.log(word.split());
+// //10
+// console.log(word.split(","));
+// //11
+// let arr = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon';
+// console.log(arr.split(","));
+// //12
+// console.log(word.replace("JavaScript" , "Python"));
+// //13
+// console.log(word.charAt(15));
+// //14
+// console.log(word.charCodeAt("J"));
+// //15
+// console.log(word.indexOf("a"));
+// //16
+// console.log(word.lastIndexOf("a"));
+// //17
+// let Sentence = 'You cannot end a sentence with because because because is a conjunction';
+// console.log(Sentence.indexOf("because"));
+// //18
+// console.log(Sentence.lastIndexOf("because"));
+// //19
+// console.log(Sentence.search("because"));
+// //20
+// let Word = ' 30 Days Of Javascript ';
+// console.log(Word);
+// console.log(Word.trim());
+
+// //21
+// console.log(word.startsWith("30"));
+// //22
+// console.log(word.endsWith("Script"));
+// //23
+// console.log(word.match("a"));
+// console.log(word.match("s"));
+// //24
+// let word1 = "30 Days";
+// let word2 = "Of JavaScript";
+// console.log(word1.concat(word2));
+
+// //25
+// console.log(word.repeat(2));
+//Level - 2
+//Questions
+
+// 1 -  Using console.log() print out the following statement:
+// The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.
+
+// 2 -  Using console.log() print out the following quote by Mother Teresa:
+// "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
+
+// 3 -  Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
+
+// 4 -  Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
+
+// 5 -  Check if 'on' is found in both python and jargon
+
+// 6 -  I hope this course is not full of jargon. Check if jargon is in the sentence.
+
+// 7 - Generate a random number between 0 and 100 inclusively.
+
+// 8 - Generate a random number between 50 and 100 inclusively.
+
+// 9 -  Generate a random number between 0 and 255 inclusively.
+
+// 10 -  Access the 'JavaScript' string characters using a random number.
+
+// 11 -  Use console.log() and escape characters to print the following pattern.
+
+// 1 1 1 1 1
+// 2 1 2 4 8
+// 3 1 3 9 27
+// 4 1 4 16 64
+// 5 1 5 25 125
+
+
+//Answer
+//1
+console.log('There is no exercise better for the heart than reaching down and lifting people up.'+"\n" +"by John Holmes teaches us to help one another.");
 //2
-console.log(word);
+console.log("\n"+"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead.");
 //3
-console.log(word.length);
+let number = '10';
+let check = 10;
+if(number === check){
+    console.log(number === check);
+}
+else{
+    let check2 = parseInt(number);
+    console.log(check2 === check);
+}
+
 //4
-console.log(word.toUpperCase());
+let Num = '9.8';
+let Check = 10;
+if(Num === Check){
+    console.log(Num === Check);
+}
+else{
+    let round = Math.round(Num);
+    let check2 = parseFloat(round);
+    console.log(check2 === Check);
+}
+
 //5
-console.log(word.toLowerCase());
+let Words = "Python";
+let Words1 = "Jargon";
+console.log(Words.includes("on") + Words1.includes('on'));
+
 //6
-console.log(word.slice(0 , 1));
+let Sentence = "I hope this course is not full of jargon";
+console.log(Sentence.includes("jargon"));
+
 //7
-console.log(word.slice(3));
+let Random = Math.floor(Math.random() * 100);
+console.log(Random);
+
 //8
-console.log(word.includes("Script"));
+let Random1 = Math.floor(Math.random() *51) + 50;
+console.log(Random1);
+
 //9
-console.log(word.split());
+let Random2 = Math.floor(Math.random() * 255);
+console.log(Random2);
+
 //10
-console.log(word.split(","));
+let Str = "JavaScript";
+let string = Math.floor(Math.random() *Str.length);
+let word = Str[string];
+
+console.log(string + word);
+
 //11
-let arr = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon';
-console.log(arr.split(","));
-//12
-console.log(word.replace("JavaScript" , "Python"));
-//13
-console.log(word.charAt(15));
-//14
-console.log(word.charCodeAt("J"));
-//15
-console.log(word.indexOf("a"));
-//16
-console.log(word.lastIndexOf("a"));
-//17
-let Sentence = 'You cannot end a sentence with because because because is a conjunction';
-console.log(Sentence.indexOf("because"));
-//18
-console.log(Sentence.lastIndexOf("because"));
-//19
-console.log(Sentence.search("because"));
-//20
-let Word = ' 30 Days Of Javascript ';
-console.log(Word);
-console.log(Word.trim());
+for(let i = 1; i <= 5; i++){
+    let I1 = i * 1;
+    let I2 = i * I1;
+    let I3 = i * I2;
 
-//21
-console.log(word.startsWith("30"));
-//22
-console.log(word.endsWith("Script"));
-//23
-console.log(word.match("a"));
-console.log(word.match("s"));
-//24
-let word1 = "30 Days";
-let word2 = "Of JavaScript";
-console.log(word1.concat(word2));
+    console.log(`${i} ${1} ${I1} ${I2} ${I3}`);
+}
 
-//25
-console.log(word.repeat(2));
 
