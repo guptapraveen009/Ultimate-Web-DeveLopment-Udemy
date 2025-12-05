@@ -1,0 +1,41 @@
+        /* class Selector */
+        .class-p {
+            background-color: Black;
+            color: #ffff;
+            font-size: 20px;
+        }
+
+        /* Id Selector */
+        #id-p {
+            background-color: aquamarine;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+        }
+
+        /* Universal Selector */
+
+        * {
+            padding: 0;
+            margin: 10px;
+        }
+
+        p {
+            background-color: red;
+            color: blue;
+        }
+
+        /* Other All Styling Properties are In Notes */
+
+        /*Colors In Css  */
+        .c-p{
+         background-color: black;  /* Using Name Method For Color */
+         color: rgb(101, 100, 200);  /* Using Rgb Method and Number For Color */
+         border: 5px solid #ff0f;  /* Using Hexa Code Method For Color */
+         background-color: rgba(0, 0, 0, .1)/* Using Rgba Code Method for Color */
+        }
+        h1{
+            font-size: 0.5in;
+        }
+
+        /* Other Topics are in Notes */
+        
