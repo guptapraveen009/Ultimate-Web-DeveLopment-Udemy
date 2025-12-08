@@ -1,6 +1,6 @@
 //Function In Javascript
 //Level - 1
-const prompt = require("prompt-sync")()
+// const prompt = require("prompt-sync")()
 //Questions 1 & 2
 // Declare a function fullName and it print out your full name.
 // Declare a function fullName and now it takes firstName, lastName as a parameter and it returns your full - name.
@@ -147,4 +147,13 @@ const prompt = require("prompt-sync")()
 // }
 
 //     let month = season(Season = prompt("Enter The Season :"));
-    
+   
+
+// let num = 25.5;
+// console.log(num.toFixed(1));
+
+// function displayname () {
+//    console.log(<h1>"This Is Function"</h1>);
+// }
+
+// displayname()

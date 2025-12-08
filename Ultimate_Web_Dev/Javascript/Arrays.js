@@ -38,44 +38,52 @@
 // 8 -> Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
 // 9 -> Filter out companies which have more than one 'o' without the filter method
 // 10 -> Sort the array using sort() method
+// 11 -> Reverse the array using reverse() method
+// 12 -> Slice out the first 3 companies from the array
+// 13 -> Slice out the last 3 companies from the array
+// 14 -> Slice out the middle IT company or companies from the array
+// 15 -> Remove the first IT company from the array
+// 16 -> Remove the middle IT company or companies from the array
+// 17 -> Remove the last IT company from the array
+// 18 -> Remove all it Companies
 
 //Answers
 // 1 -> Ans
 let itCompanies = ['FaceBook' , 'Google' , 'MicroSoft' , 'Apple' , 'IBM' , 'Oracle' , 'Amazon'];
 
-// 2 -> Ans 
-        console.log(itCompanies);
+// // 2 -> Ans 
+//         console.log(itCompanies);
 
-// 3 -> Ans
+// // 3 -> Ans
 
-        console.log(itCompanies.length);
+//         console.log(itCompanies.length);
 
-// 4 - Ans
-let first_com = itCompanies[0];
-console.log(first_com);
+// // 4 - Ans
+// let first_com = itCompanies[0];
+// console.log(first_com);
 
-let middle1 = Math.floor(itCompanies.length / 2);
-let Middle_com = itCompanies[middle1];
-console.log(Middle_com);
+// let middle1 = Math.floor(itCompanies.length / 2);
+// let Middle_com = itCompanies[middle1];
+// console.log(Middle_com);
 
-let last_com = itCompanies[itCompanies.length - 1]
-console.log(last_com);
+// let last_com = itCompanies[itCompanies.length - 1]
+// console.log(last_com);
 
-//5 - Ans 
+// //5 - Ans 
 
-for (let i = 0; i < itCompanies.length; i++){
+// for (let i = 0; i < itCompanies.length; i++){
        
-        console.log(itCompanies[i]);
-}
+//         console.log(itCompanies[i]);
+// }
 
-//6 -> Ans
-for (let j = 0; j < itCompanies.length; j++){
-        console.log(itCompanies[j].toUpperCase());
-}
+// //6 -> Ans
+// for (let j = 0; j < itCompanies.length; j++){
+//         console.log(itCompanies[j].toUpperCase());
+// }
 
 //7 -> Ans
-let sentence = itCompanies.toString();
-console.log(sentence +" "+ "Are The Big IT Companies .");
+// let sentence = itCompanies.toString();
+// console.log(sentence +" "+ "Are The Big IT Companies .");
 
 
 //8 -> Ans
@@ -89,14 +97,38 @@ console.log(sentence +" "+ "Are The Big IT Companies .");
 // }
 
 //9 -> Ans
-let result = []
-for(let k = 0; k < itCompanies.length; k++){
-        if(itCompanies[k].includes("o")){
-                 result.push(itCompanies[k]) 
-        }
+// let result = []
+// for(let k = 0; k < itCompanies.length; k++){
+//         if(itCompanies[k].includes("o")){
+//                  result.push(itCompanies[k]) 
+//         }
         
-}
-console.log(result);
+// }
+// console.log(result);
 
-//10 -> ans
-console.log(itCompanies.sort());
+// //10 -> ans
+// console.log(itCompanies.sort());
+
+// // 11 ->. Ans
+// console.log(itCompanies.reverse());
+
+// 12 -> Ans
+console.log(itCompanies.slice(0 , 3));
+//13 -> Ans
+
+console.log(itCompanies.slice(itCompanies.length-3));
+
+//14 -> Ans
+let mid = itCompanies.length/2;
+console.log(itCompanies.slice(mid - 1 , mid + 1));
+
+// 15 -> Ans
+// console.log(itCompanies.shift());
+// // 16 -> Ans
+// console.log(itCompanies.splice(mid - 1 , 1));
+// //17 -> Ans
+// console.log(itCompanies.pop());
+//18 -> Ans
+for(let i = 0; i <itCompanies.length; i++){
+        console.log(itCompanies[i]);
+}
