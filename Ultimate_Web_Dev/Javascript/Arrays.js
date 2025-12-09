@@ -132,3 +132,6 @@ console.log(itCompanies.slice(mid - 1 , mid + 1));
 for(let i = 0; i <itCompanies.length; i++){
         console.log(itCompanies[i]);
 }
+
+
+
