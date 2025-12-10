@@ -129,9 +129,9 @@ console.log(itCompanies.slice(mid - 1 , mid + 1));
 // //17 -> Ans
 // console.log(itCompanies.pop());
 //18 -> Ans
-for(let i = 0; i <itCompanies.length; i++){
-        console.log(itCompanies[i]);
-}
+// for(let i = 0; i <itCompanies.length; i++){
+//         console.log(itCompanies[i]);
+// }
 
 
 
