@@ -66,8 +66,3 @@
 //    paragrapgh[j].className = "Paragraph";
 //    console.log(paragrapgh[j]);
 //   }
-
-
-
-
-
