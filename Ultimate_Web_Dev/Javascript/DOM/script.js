@@ -66,3 +66,8 @@
 //    paragrapgh[j].className = "Paragraph";
 //    console.log(paragrapgh[j]);
 //   }
+
+// Set time Out
+// let time = setTimeout(() => {
+//   alert("Hello")
+// },100)
