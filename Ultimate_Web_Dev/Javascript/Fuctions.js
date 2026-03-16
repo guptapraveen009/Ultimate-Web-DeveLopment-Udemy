@@ -22,13 +22,13 @@
 // Declare a function addNumbers and it takes two two parameters and it returns sum.
 
 //Solution - 3
-// let sum = 0;
-// const add = (a , b) =>{
-//      sum = (a + b);
-//      return sum;
-// };
-// console.log(add(10 , 20));
-// console.log(add(60 , 40));
+let sum = 0;
+const add = (a , b) =>{
+     sum = (a + b);
+     return sum;
+};
+console.log(add(10 , 20));
+console.log(add(60 , 40));
 
 
 //Question - 4
