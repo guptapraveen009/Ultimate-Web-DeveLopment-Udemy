@@ -145,7 +145,7 @@
 //   console.log(Object.keys(users)[i]);
 // }
 
-//Question -> Use the countries object to print a country name, capital, populations and languages.
+
 
 
 
