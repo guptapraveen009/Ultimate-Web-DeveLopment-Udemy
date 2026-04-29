@@ -49,7 +49,7 @@
 
 //Answers
 // 1 -> Ans
-let itCompanies = ['FaceBook' , 'Google' , 'MicroSoft' , 'Apple' , 'IBM' , 'Oracle' , 'Amazon'];
+// let itCompanies = ['FaceBook' , 'Google' , 'MicroSoft' , 'Apple' , 'IBM' , 'Oracle' , 'Amazon'];
 
 // // 2 -> Ans 
 //         console.log(itCompanies);
@@ -113,14 +113,14 @@ let itCompanies = ['FaceBook' , 'Google' , 'MicroSoft' , 'Apple' , 'IBM' , 'Orac
 // console.log(itCompanies.reverse());
 
 // 12 -> Ans
-console.log(itCompanies.slice(0 , 3));
-//13 -> Ans
+// console.log(itCompanies.slice(0 , 3));
+// //13 -> Ans
 
-console.log(itCompanies.slice(itCompanies.length-3));
+// console.log(itCompanies.slice(itCompanies.length-3));
 
-//14 -> Ans
-let mid = itCompanies.length/2;
-console.log(itCompanies.slice(mid - 1 , mid + 1));
+// //14 -> Ans
+// let mid = itCompanies.length/2;
+// console.log(itCompanies.slice(mid - 1 , mid + 1));
 
 // 15 -> Ans
 // console.log(itCompanies.shift());
@@ -135,3 +135,20 @@ console.log(itCompanies.slice(mid - 1 , mid + 1));
 
 
 
+// let arr = [30 , 50, 40, 80 , 10];
+
+//  let max = arr[0]
+//  for(let i = 1; i < arr.length; i++){
+//     if(arr[i] > max){
+//          max = arr[i]
+//      }
+//  }
+
+//  console.log(max);
+
+// arr.sort()
+let Arr = "Praveen"
+let arr = Array.from(Arr);
+for(let i = arr.length - 1; i >= 0; i--){
+    console.log(arr[i]);
+}
