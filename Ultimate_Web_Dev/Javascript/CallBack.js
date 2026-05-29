@@ -2,7 +2,7 @@
 // let Marks = (hindi , english , maths) =>{
 //   console.log(`The Total Marks Are = ${hindi + english + maths}`);
 // }
-const prompt = require("prompt-sync")()
+// const prompt = require("prompt-sync")()
 // let TotalMarks = (hindi , english , maths , MarksCallBack) =>{
 //   MarksCallBack(hindi , english , maths);
 // }

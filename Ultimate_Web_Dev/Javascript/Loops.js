@@ -15,18 +15,18 @@ const prompt = require("prompt-sync")()
 // }
 
 // //While Loop
-// let i = 0;
-// while(i <= Number){
-//     console.log(i);
-//     i++
+// let j = 0;
+// while(j <= Number){
+//     console.log(j);
+//     j++
 // }
 
 // //Do While Loop
-// let j = 0;
+// let k = 0;
 // do{
-//     console.log(j);
-//     j++;
-// }while(j <= 20);
+//     console.log(k);
+//     k++;
+// }while(k <= Number);
 
 
 //Question 
@@ -166,28 +166,6 @@ const prompt = require("prompt-sync")()
 
 //Solution
 
-// let prime = parseInt(prompt("Enter The Number : "));
-// let isPrime = true;
-
-// if(prime === 1){
-//     console.log(`${prime} Is Nither Prime nor Composeti Number`);
-// }
-// else if(prime > 1){
-//     for(let i = 2; i < prime/2; i++){
-//         if(prime % i == 0){
-//             isPrime = false;
-//         break;
-//         }
-//     }
-
-
-// if(isPrime){
-//     console.log(`${prime} Is A Prime Number`);
-// }
-// else{
-//     console.log(`${prime} Is Not A Prime Number`);
-// }
-// }
 
 //Question
 // Use for loop to iterate from 0 to 100 and print the sum of all numbers.
@@ -206,23 +184,26 @@ const prompt = require("prompt-sync")()
 
 // Question
 // Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
-// The sum of all evens from 0 to 100 is 2550. And the sum of all odds from 0 to 100 is 2500.
+
 
 //Solution
 
 // let num1 = prompt("Enter the Number : ");
 // parseInt(num1);
-// let sum = 0;
+// // let sum = 0;
 // for (let i = 0; i <= num1; i++) {
 //     if (i % 2 === 0) {
 //         continue
+       
+
 //     }
-//     sum += i;
+//      console.log(i);
+//     // sum += i;
 // };
 // console.log(sum);
 
 
-
+// Question =  The sum of all evens from 0 to 100 is 2550. And the sum of all odds from 0 to 100 is 2500.
 // let num = prompt("Enter the Number : ");
 // parseInt(num);
 // let sum1 = 0;
@@ -235,68 +216,84 @@ const prompt = require("prompt-sync")()
 // console.log(sum1);
 
 
-//Question 
-// Develop a small script which generate array of 5 random numbers.
-// Develop a small script which generate array of 5 random numbers and the numbers must be unique
-
-//Solution
-// let Random = [];
-
-// for(let i = 0; i < 5; i++){
-//     let num = Math.floor(Math.random() * 100 ); // Explanation -> The Math.random method genrates random number between 0 , 1 .
-//     //Math.floor does change the random number which is genreated by Math.random is change into round value or whole number .
-//     //Multiplying the Math.random with 100 genrates the number between 0 - 100 and Math.floor make the decimal number and round value or whole number
-
-//     Random.push(num);
+//Question = Print Fibbnocie Number
+// let fib = parseInt(prompt("Enter a number to print fibnoccie number : "));
+// let a = 0 , b = 1 , result
+// for(let i = 2; i < fib; i++){
+//     result = a + b; // Now result have the value of a + b
+//     a = b   // a = 1 
+//     b = result; // and b = 1 . Now the loop Run's again and Now result = 2 , a = 1 , b = 2
+//     console.log(result);
 // }
-// console.log(Random);
-
-//Question 
-//Develop a small script which generate a six characters random id:
-// 5j2khz
 
 
-// let Char = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-// let random_id = "";
-// for(let i = 0; i < 5; i++){
-//     random_id += Char.charAt(Math.floor(Math.random() * Char.length));
-// } 
-
-// console.log("The Random ID : " + random_id);
-
-//Develop a small script which generate any Number of characters random id :
-// let random_id_lenght = prompt("Enter The Lenght Of Random Id You What To Genrate : ");
-// parseInt(random_id_lenght);
-// let character = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-// let Random_Id = "";
-// for(let i = 0; i < random_id_lenght; i++){
-//     Random_Id += character.charAt(Math.floor(Math.random() * random_id_lenght));
+// Question = Develop a small script which generate array of 5 random numbers
+// let random_Numbers = [];
+// let generater = 5
+// for(let i = 0; i < generater; i++){
+//     let NUM = Math.floor(Math.random() * 100);
+//     random_Numbers.push(NUM)
 // }
-// console.log(Random_Id);
+// console.log(random_Numbers);
 
-//Question 
-// Write a script which generates a random rgb color number.
-//rgb(240,180,80)
+// Question = Develop a small script which generate random password
+// let password = "";
+// let val = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+-=[]{}|;:,.<>?0123456789"
+// for(let i = 0; i < 5; i++){
+//     let Random_Pass = Math.floor(Math.random() * val.length);
+//    password += val[Random_Pass]
+// }
+// console.log(password);
 
-let col = "rgb(" ;
-for(let i = 0; i < 3; i++){
-    let ran_color = Math.floor(Math.random() * 255) + 1;
-    col += ran_color;
-    if(i < 2){
-        col += " , ";
-    }
+
+//Question = Using the  countries array, create the new array with every element in Uppercase.
+const countries = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Iceland',
+  'Japan',
+  'Kenya'
+]
+
+let COUNTRIES = countries.map((country) => {
+  return country.toUpperCase();
+})
+console.log(COUNTRIES);
+
+let len = countries.map((val) => {
+ return val.length;
+})
+console.log(len);
+
+
+let land = countries.forEach((Country) =>{
+ if(Country.includes("land")){
+    console.log(Country);
+ }
+})
+
+
+//Question =  In above countries array, check if there is a country or countries end with a substring 'ia'. If there are countries end with, print it as array. If there is no country containing the word 'ai', print 'These are countries ends without ia'.
+let Check = countries.filter((country) =>{
+return country.endsWith("ia")
+});
+if(Check.length > 0){
+  console.log(Check);
+}else{
+  console.log(countries);
 }
-col += ")"
-console.log(col);
-    
-   
-    
-//Question :
-// Using the above countries array, create the following new array.
-// ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
 
-// let arr = ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"];
-// for(let i = 0; i < arr.length; i++){
-//     console.log([arr[i].length]);
-//     console.log([arr[i].toLowerCase()+" "+ arr[i].slice(0 , 3).toUpperCase()+" "+[arr[i].length]]);
-// }
+
+let longest = countries.reduce((long , current) => {
+return current.length > long.length ? current : long
+});
+console.log(longest);
+
+

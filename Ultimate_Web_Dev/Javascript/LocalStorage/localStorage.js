@@ -1,8 +1,6 @@
-
-
-let submit= document.getElementById("subitbtn");
-const form = document.getElementById("MyFrom");
-form.addEventListener("click" , function () {
-let value = document.getElementById("name").value;
-localStorage.setItem("name" , value)
-})   
+let submit = document.getElementById("subimtbtn");
+let inputfield = document.getElementById("name");
+submit.addEventListener('click' , (e) =>{
+    e.preventDefault()
+    localStorage.setItem("Name" , inputfield.value)
+})

@@ -235,3 +235,15 @@ Clean the following text and find the most frequent word (hint, use replace and 
 Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
  */
 
+
+
+var x = 100;
+{
+    var x = 500
+}
+
+let a = x
+{
+    let a = 10000
+}
+console.log(a);

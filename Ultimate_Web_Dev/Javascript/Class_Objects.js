@@ -61,4 +61,24 @@ const prompt = require("prompt-sync")()
 // }
 
 
-console.log(typeof NaN);
+
+
+
+
+// inhertience
+class Animal {
+    constructor(name){
+this .name = name
+console.log("Random animal");
+    }
+}
+
+class Dog extends Animal {
+    constructor(name , bread){
+        super(name),
+        this.bread = bread
+    }
+}
+
+let dog = new Dog('JOHN' , 'pumalian');
+console.log(dog);

@@ -1,6 +1,6 @@
 //Function In Javascript
 //Level - 1
-// const prompt = require("prompt-sync")()
+const prompt = require("prompt-sync")()
 //Questions 1 & 2
 // Declare a function fullName and it print out your full name.
 // Declare a function fullName and now it takes firstName, lastName as a parameter and it returns your full - name.
@@ -149,11 +149,52 @@ console.log(add(60 , 40));
 //     let month = season(Season = prompt("Enter The Season :"));
    
 
-// let num = 25.5;
-// console.log(num.toFixed(1));
+let num = 25.5;
+console.log(num.toFixed());
 
-// function displayname () {
-//    console.log(<h1>"This Is Function"</h1>);
+
+
+// Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
+
+// let userIdGenerator = () => {
+//      let password ="";
+//      let characters = parseInt(prompt("Enter number of characters you want in your id : "));
+//      let ids = parseInt(prompt("Enter number of IDS you want : "));
+//      let val = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+//      for(let i = 0; i < characters; i++){
+//           for(let j = 0; j < ids; j++){
+//      let Nochara = Math.floor(Math.random() * val.length)
+//      password += val[Nochara]
+//      }
+//      console.log(password);
+//      }
+// }
+// userIdGenerator()
+
+
+let factorial = (num) => {
+     let fact = 1;
+     for(let i = 1; i <= num; i++){
+          fact = fact * i
+     }
+     return fact
+}
+console.log(factorial(5));
+
+
+// let converter = (arr = []) => {
+//      if(arr.length > 5){
+//           return arr.map((val , index) => {
+//                if(index === 5){
+//                return val.toUpperCase()
+//              } 
+//               return val; 
+//           });
+//          }
+//      else{
+//          return 'array length is smaller';
+//      }
 // }
 
-// displayname()
+// console.log(converter(["Praveen" , "rahul" , "rakesh" , "bharat" , "prem"]));

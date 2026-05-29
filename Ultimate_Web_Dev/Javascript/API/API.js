@@ -1,28 +1,47 @@
-//Weather API
+// Promise In JS 
+// Simple Promise
+// const prompt = require("prompt-sync")()
+// let check = new Promise((resolve , reject) =>{
+//          let age = parseInt(prompt("Enter The age : "));
+//          if(isNaN(age)){
+//             reject("Not a Number")
+//          }
+//          if(age > 18){
+//             resolve("You are eligibe to drive")
+//          }else{
+//             reject("You are not eligible to drive");
+//          }
+// });
 
-// async function weather() {
-//   const res = await fetch(
-//    "https://api.openweathermap.org/data/3.0/onecall?lat={19.36125461988356}&lon={79.48715206262341}&exclude={current}&appid={a21371864bbc203f912f006aa42486bc}"
-//   );
-//   const data = await res.json();
-// console.log(data);
-// }
-// weather();
-
-
-//USER API
-
-// let container = document.getElementById("container");
-// let Data = fetch("https://jsonplaceholder.typicode.com/users");
-//   Data.then(respo => respo.json())
-//   .then(user => {
-//     user.forEach(element => {
-//       let p = document.createElement('p');
-//       p.textContent = element.phone;
-//       container.appendChild(p);
-//     })
-//   })
+// check
+// .then(message => console.log(message))
+// .catch(error => console.log(error));
 
 
+// Exscices
+// API's = 
+ const countriesAPI = 'https://restcountries.com/v3.1/all?fields=name,capital,languages,population,area'
+const catsAPI = 'https://api.thecatapi.com/v1/breeds'
+//Question = Read the countries API using fetch and print the name of country, capital, languages, population and area.
+async function countries() {
+    let Country = await fetch(countriesAPI);
+    let data = await Country.json()
+    try{
+   let alldata = Array.from(data).map(country =>({
+    name : country.name.common,
+    capital : country.capital,
+    population : country.population,
+    area : country.area,
+    language : country.languages
+
+   })); 
+   console.log(alldata);
+   }
+   catch(error){
+    console.log(error);
+   }
+
+}
+countries()
 
 
