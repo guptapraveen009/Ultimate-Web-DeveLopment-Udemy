@@ -297,3 +297,6 @@ return current.length > long.length ? current : long
 console.log(longest);
 
 
+const arr = [1 , 21 , 30 , 4];
+arr.sort()
+console.log(arr);

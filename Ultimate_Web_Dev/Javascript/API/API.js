@@ -20,28 +20,48 @@
 
 // Exscices
 // API's = 
- const countriesAPI = 'https://restcountries.com/v3.1/all?fields=name,capital,languages,population,area'
-const catsAPI = 'https://api.thecatapi.com/v1/breeds'
-//Question = Read the countries API using fetch and print the name of country, capital, languages, population and area.
-async function countries() {
-    let Country = await fetch(countriesAPI);
-    let data = await Country.json()
+//  const countriesAPI = 'https://restcountries.com/v3.1/all?fields=name,capital,languages,population,area'
+// const catsAPI = 'https://api.thecatapi.com/v1/breeds'
+// //Question = Read the countries API using fetch and print the name of country, capital, languages, population and area.
+// async function countries() {
+//     let Country = await fetch(countriesAPI);
+//     let data = await Country.json()
+//     try{
+//    let alldata = Array.from(data).map(country =>({
+//     name : country.name.common,
+//     capital : country.capital,
+//     population : country.population,
+//     area : country.area,
+//     language : country.languages
+
+//    })); 
+//    console.log(alldata);
+//    }
+//    catch(error){
+//     console.log(error);
+//    }
+
+// }
+// countries()
+
+
+function delay (){
     try{
-   let alldata = Array.from(data).map(country =>({
-    name : country.name.common,
-    capital : country.capital,
-    population : country.population,
-    area : country.area,
-    language : country.languages
-
-   })); 
-   console.log(alldata);
-   }
-   catch(error){
-    console.log(error);
-   }
-
+    return new Promise((resolve ) =>{
+        setTimeout(() =>{
+            resolve('Praveen');
+        },2000)
+    })
+    }
+    catch(e){
+        console.log(`${e} ERROR`);
+    }
 }
-countries()
-
-
+async function random() {
+    console.log("start");
+    
+    let delayed_text = await delay()
+   console.log(delayed_text);
+    console.log("end")
+}
+random()
