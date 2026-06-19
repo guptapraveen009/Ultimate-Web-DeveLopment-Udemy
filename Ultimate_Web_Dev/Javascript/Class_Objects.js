@@ -66,19 +66,19 @@ const prompt = require("prompt-sync")()
 
 
 // inhertience
-class Animal {
-    constructor(name){
-this .name = name
-console.log("Random animal");
-    }
-}
+// class Animal {
+//     constructor(name){
+// this .name = name
+// console.log("Random animal");
+//     }
+// }
 
-class Dog extends Animal {
-    constructor(name , bread){
-        super(name),
-        this.bread = bread
-    }
-}
+// class Dog extends Animal {
+//     constructor(name , bread){
+//         super(name),
+//         this.bread = bread
+//     }
+// }
 
-let dog = new Dog('JOHN' , 'pumalian');
-console.log(dog);
+// let dog = new Dog('JOHN' , 'pumalian');
+// console.log(dog);
